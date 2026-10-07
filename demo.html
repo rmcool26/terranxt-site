@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book a demo | Terranxt</title>
+<meta name="description" content="Book a 30-minute live walkthrough of pvNXT, Monday to Friday, 9 am to 5 pm IST.">
+<meta name="theme-color" content="#069fb1">
+<link rel="icon" href="assets/logos/terranxt.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js" defer></script>
+</head>
+<body data-root="" data-page="demo">
+<div id="site-header"></div>
+<main>
+
+<section class="page-hero"><div class="wrap"><span class="eyebrow">Request a demo</span><h1>Book a 30-minute walkthrough.</h1><p class="lead">Tell us who you are and we will show you the part of pvNXT that fits your work. Monday to Friday, 9 am to 5 pm IST.</p></div></section>
+<section class="sec tint"><div class="wrap">
+<div id="book-ui"><div class="book" id="booking">
+<div class="stack"><h3>1. Pick a day</h3><div class="days" id="days"></div><h3 style="margin-top:12px">2. Pick a time</h3><div class="slots" id="slots"><p class="note" style="grid-column:1/-1">Choose a day first. All times are IST.</p></div></div>
+<div class="fcard"><h3 style="margin-bottom:16px">3. Your details</h3><p class="note" id="book-hint">Pick a day and time to continue.</p><div class="picked" id="picked"></div>
+<form id="demo-form"><input type="hidden" name="slot"><label>Name<input name="name" required></label><div class="two"><label>Work email<input type="email" name="email" required></label><label>Phone<input type="tel" name="phone" required></label></div><div class="two"><label>I am a<select name="role"><option>EPC company</option><option>Installer</option><option>Homeowner</option><option>O&amp;M team</option><option>Investor</option><option>Other</option></select></label><label>Company<input name="company"></label></div><label>What would you like to see? (optional)<textarea name="wants" rows="3"></textarea></label><button class="btn" type="submit">Confirm booking</button></form></div>
+</div></div>
+<div class="ok" id="book-done" style="max-width:520px"><i data-lucide="circle-check"></i><h2>You are booked.</h2><p class="lead" id="book-done-when"></p><p class="muted">We have emailed you the details and a meeting link. You will get a reminder the day before.</p></div>
+</div></section>
+<section class="sec tight"><div class="wrap" style="display:flex;justify-content:space-between;gap:24px;align-items:center;flex-wrap:wrap"><div><h3>Prefer to try it yourself?</h3><p class="muted">pvNXT is free during beta.</p></div><a class="link" href="products.html">Browse products <i data-lucide="arrow-right"></i></a></div></section>
+</main>
+<div id="site-footer"></div>
+<script src="js/layout.js"></script>
+<script src="js/forms.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+Place screenshots here: hero-studio.png, studio.png, go.png, connect.png, scada.png, artha.png, proof.jpg

@@ -1,0 +1,1 @@
+Place logos here: terranxt.svg, pvnxt.svg, astongreens.svg, iit-delhi.svg

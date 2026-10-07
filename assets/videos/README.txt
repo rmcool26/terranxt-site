@@ -1,0 +1,1 @@
+Videos over 20MB: host on YouTube/Vimeo and paste the embed URL into js/data.js (portals[].video).
