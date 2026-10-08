@@ -38,3 +38,28 @@ Removed as redundant: "One platform", "On your phone too" strip, "Try it free du
 Built: 20+ pages (home, products, Atlas, Studio, Go, Connect, SCADA, Artha, apps, how it works, about+roadmap, careers, investors, demo with slot booking, contact+help, legal, 404), analytics hooks, SEO basics, accessibility basics.
 Homepage polished through all sections. Other pages still use the earlier design and should get the same polish next.
 Still needed: see 05-LAUNCH-CHECKLIST.md.
+
+---
+## Update: pages built and approved after the homepage
+
+| Page | Chosen design | Notes |
+|---|---|---|
+| Header / footer | Light footer (14a) + hero-sky wordmark band | Closing CTA is per page (data-cta-* on <body>). Wordmark band is light, same tint as the footer, flashlight on hover. |
+| Products | 13d, project stages (Plan, Build, Run, Invest) | Two equal buttons per row: Open X (new tab) and Learn more. |
+| Page hero (all inner pages) | 11d, page-aware whispers | data-reveal and data-whispers on each hero. |
+| Studio, Go, Connect, SCADA | 17a template | Text-first hero, Replaces, inline demo video, 3 role cards, zigzag How it works with outputs band, FAQ section, Previous/Next. |
+| Atlas | 20a | Request form in hero, drag-to-compare viewer, layer chips, 3 steps, Used in, FAQ. |
+| Artha | 20b | Early-access form in hero, full-width centered risk band, 4 steps, sample project card, FAQ. |
+| How it works | 22a | Zigzag spine that is the "one project record", progress rail, inline video, FAQ. |
+| About | 24a | Why we exist (dark, whispers) > The people > Who we work with (FITT, Astongreens logos) > Roadmap board > Careers. |
+Previous / Next order on product pages: Atlas, Studio, Go, Connect, SCADA, Artha.
+
+## Final fixes in the last round
+- Closing CTA text link now visible on hover (footer link colours were overriding it).
+- Footer social icons are visible on hover.
+- Footer address reads: 12A, M3M Urbana Premium / Sector 67, Gurugram 122101.
+- Wordmark band is light and matches the footer.
+- Product-page copy cleaned: no unverified claims (removed "takes 2 minutes", "data is encrypted", weak-network sync).
+
+## Still open (see 05-LAUNCH-CHECKLIST.md)
+Real images and videos, Astongreens logo file, analytics IDs, Odoo form endpoints and booking backend, store and social links, legal text, quote approvals, Artha wording ("Invest") after legal review.

@@ -11,5 +11,6 @@ Everything about the revamp, in reading order.
 | 04-AUDIT-AND-COMPETITORS.md | Homepage score, competitor standing, CRO tracker, tracking plan |
 | 05-LAUNCH-CHECKLIST.md | Everything still to supply or connect before launch |
 | 06-IMAGE-PROMPTS.md | Gemini prompts for every placeholder image |
+| 07-CODE-STRUCTURE.md | How the code is organised and how to edit it |
 
 The site itself is static HTML, CSS and JS. Open index.html or use VS Code Live Server.

@@ -21,3 +21,6 @@ Skip link, visible focus rings, aria-expanded on doors and menus, links in close
 
 ## Files
 index.html and the other pages. css/styles.css (all styles). js/layout.js (header, footer, closer), hero.js, portals.js, whispers.js, forms.js, analytics.js. assets/images, assets/logos (terranxt.png, fitt.png, mark.png, pattern.png), assets/videos. sitemap.xml, robots.txt.
+
+## Global page hero
+Every inner page uses <section class="page-hero"> with eyebrow, h1 and lead. Reveal under the cursor is set by data-reveal (whispers is the chosen default; panels, mesh and icons also exist) and js/page-hero.js; edit only the content and the data attributes.

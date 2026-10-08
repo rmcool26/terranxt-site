@@ -1,5 +1,5 @@
 /* Forms + demo booking. Set Odoo endpoints in TX_CONFIG. Empty = front-end only. */
-window.TX_CONFIG={endpoints:{demo:'',careers:'',artha:'',investor:''}}; // e.g. 'https://yourodoo.com/website/form/crm.lead'
+window.TX_CONFIG={endpoints:{demo:'',careers:'',artha:'',investor:'', atlas:''}}; // e.g. 'https://yourodoo.com/website/form/crm.lead'
 function txSend(kind,data){
   var url=window.TX_CONFIG.endpoints[kind];
   if(!url){console.info('[TX form:'+kind+']',Object.fromEntries(data.entries()));return Promise.resolve();}

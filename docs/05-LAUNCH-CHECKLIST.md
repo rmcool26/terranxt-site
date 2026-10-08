@@ -31,3 +31,11 @@
 - [ ] Add measured numbers once they exist
 - [ ] Savings calculator, glossary, release notes page
 - [ ] Revamp astongreens.com (stays on Odoo)
+
+## Added in the last round
+- [ ] Save the Astongreens logo to assets/logos/astongreens.png
+- [ ] Replace placeholders: Atlas compare images (satellite and 3D of the same roof, 1920x960), product screenshots (1440x960), overview and product demo videos, team portraits (800x1000), project photo on Artha sample card
+- [ ] Add endpoint `atlas` in js/forms.js (Odoo form)
+- [ ] Confirm the FITT link (fitt-iitd.in) and the FITT logo usage
+- [ ] Founder notes: each founder to approve their line
+- [ ] Wording check with legal: Artha heading "Invest in solar projects"
