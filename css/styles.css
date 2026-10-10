@@ -654,3 +654,53 @@ input:focus,select:focus,textarea:focus{outline:3px solid rgba(6,159,177,.35);bo
 .ftr-wm .wm-sun,.ftr-wm .wm-grid{display:none}
 .ftr-wm .wm-t{color:#d3e4e7}
 .ftr-wm .wm-l{color:var(--teal-d)}
+
+/* floating WhatsApp + back to top (global) */
+.wa-fab{position:fixed;right:20px;bottom:20px;z-index:90;display:flex;align-items:center;gap:9px;background:#0db76f;color:#fff;padding:12px 18px 12px 14px;border-radius:99px;font:700 15px var(--f-head);box-shadow:0 14px 32px rgba(13,183,111,.32);transition:transform .2s,box-shadow .2s}
+.wa-fab:hover,.wa-fab:focus-visible{transform:translateY(-3px);box-shadow:0 20px 40px rgba(13,183,111,.4);color:#fff}
+.wa-fab svg{width:24px;height:24px;fill:currentColor}
+.to-top{position:fixed;right:20px;bottom:84px;z-index:90;width:48px;height:48px;border-radius:50%;border:1.5px solid var(--ink);background:#fff;color:var(--ink);display:grid;place-items:center;cursor:pointer;opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .2s,transform .2s,visibility .2s}
+.to-top.show{opacity:1;visibility:visible;transform:none}
+.to-top:hover,.to-top:focus-visible{background:var(--ink);color:#fff}
+.to-top svg{width:22px;height:22px}
+@media(max-width:700px){.wa-fab{right:14px;bottom:14px;padding:12px}.wa-fab span{display:none}.to-top{right:14px;bottom:74px}}
+/* proof: fits the screen, breathing room between claim and quotes */
+.proof{min-height:max(780px,calc(100svh - 68px))}
+.proof-in{padding-top:clamp(72px,11vh,128px);padding-bottom:clamp(40px,7vh,72px);gap:clamp(56px,12vh,140px)}
+.proof-note{margin-top:0}
+@media(max-width:960px){.proof{min-height:0}.proof-in{gap:40px}}
+
+/* proof: more air between the claim and the quotes */
+.proof{min-height:max(880px,calc(100svh + 40px))}
+.proof-in{gap:clamp(120px,22vh,260px)}
+@media(max-width:960px){.proof{min-height:0}.proof-in{gap:48px}}
+
+/* secondary pages */
+.chans{display:flex;flex-direction:column;border-top:1px solid var(--line-2)}
+.chan{display:grid;grid-template-columns:56px 1fr auto;gap:20px;align-items:center;padding:26px 8px;border-bottom:1px solid var(--line-2);color:var(--ink);transition:background .2s,padding .2s}
+.chan:hover,.chan:focus-visible{background:var(--tint);padding-left:18px;color:var(--ink)}
+.chan .ct{display:flex;flex-direction:column;gap:2px}.chan .ct b{font:800 21px var(--f-head);letter-spacing:-.01em}.chan .ct span{color:var(--ink-2)}
+.chan>svg{width:22px;height:22px;color:var(--teal-d);transition:transform .2s}.chan:hover>svg{transform:translateX(4px)}
+.ci{width:48px;height:48px;border-radius:50%;background:var(--tint);display:grid;place-items:center;flex:none}
+.ci svg{width:22px;height:22px;color:var(--teal-d)}
+.tint .ci{background:#fff}
+.mapbox{border-radius:14px;overflow:hidden;border:1px solid var(--line-2);min-height:340px;background:#fff}
+.mapbox iframe{width:100%;height:100%;min-height:340px;border:0;display:block}
+.else{display:flex;flex-direction:column;gap:10px;margin-top:10px;padding-top:20px;border-top:1px solid var(--line-2)}
+.apps-grid{display:grid;grid-template-columns:300px 1fr;gap:56px;align-items:start}
+.phone-col{position:sticky;top:96px}
+.app-row{grid-template-columns:1fr auto}
+.app-row .who span{display:flex;flex-direction:column;gap:2px}.app-row .who small{font:400 14px var(--f-body);color:var(--ink-2)}
+.shots3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:860px}
+.shots3 figure{margin:0;display:flex;flex-direction:column;gap:10px}.shots3 figcaption{font-size:14px;color:var(--ink-2)}
+.legal{display:grid;grid-template-columns:240px 1fr;gap:56px;align-items:start}
+.ltoc{position:sticky;top:96px;display:flex;flex-direction:column;gap:10px}
+.ltoc a{font:600 15px var(--f-head);color:var(--ink-2);padding:4px 0;border-left:2px solid transparent;padding-left:12px}
+.ltoc a:hover{color:var(--ink);border-left-color:var(--teal-d)}
+.ldoc{max-width:720px;display:flex;flex-direction:column;gap:36px}
+.ldoc h2{font-size:26px;margin-bottom:10px;letter-spacing:-.02em}
+.ldoc section{scroll-margin-top:96px}
+.ldoc .note{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.quote.qlight{background:#fff;color:var(--ink);border:1px solid var(--line-2)}
+.quote.qlight cite{color:var(--ink-2)}.quote.qlight cite b{color:var(--ink)}
+@media(max-width:860px){.apps-grid,.legal{grid-template-columns:1fr;gap:32px}.phone-col{position:static;max-width:260px}.ltoc{position:static}.shots3{grid-template-columns:1fr 1fr 1fr;gap:12px}.app-row{grid-template-columns:1fr}.chan{grid-template-columns:48px 1fr auto;gap:14px}}

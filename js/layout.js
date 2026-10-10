@@ -69,6 +69,15 @@
   var ph=document.createElement('script');ph.src=root+'js/page-hero.js';document.body.appendChild(ph);
   var sk=document.createElement('a');sk.className='skip';sk.href='#main';sk.textContent='Skip to content';document.body.insertBefore(sk,document.body.firstChild);
   var mn=document.querySelector('main');if(mn&&!mn.id){mn.id='main';mn.tabIndex=-1;}
+  var wa=document.createElement('a');wa.className='wa-fab';wa.href='https://wa.me/918447444157?text='+encodeURIComponent('Hello Terranxt, I would like to know more about pvNXT.');wa.target='_blank';wa.rel='noopener noreferrer';wa.setAttribute('aria-label','Chat with Terranxt on WhatsApp');
+  wa.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6A12 12 0 0 0 12 24c6.6 0 12-5.4 12-12 0-3.2-1.2-6.2-3.5-8.5zM12 21.9c-1.8 0-3.6-.5-5.1-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.9 9.9 0 0 1 2.1 12C2.1 6.5 6.5 2.1 12 2.1c2.6 0 5.1 1 7 2.9a9.8 9.8 0 0 1 2.9 7c0 5.5-4.4 9.9-9.9 9.9zm5.4-7.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1l-1 1.2c-.2.2-.4.2-.7.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 3 1.2 3 .8 3.6.8.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.2-.6-.4z"/></svg><span>WhatsApp</span>';
+  document.body.appendChild(wa);
+  var tt=document.createElement('button');tt.type='button';tt.className='to-top';tt.setAttribute('aria-label','Back to top');tt.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 15 7-7 7 7"/></svg>';
+  document.body.appendChild(tt);
+  var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  tt.addEventListener('click',function(){window.scrollTo({top:0,behavior:rm?'auto':'smooth'});});
+  function tog(){tt.classList.toggle('show',window.scrollY>700);}
+  window.addEventListener('scroll',tog,{passive:true});tog();
   function icons(){if(window.lucide)window.lucide.createIcons();}
   icons();window.addEventListener('load',icons);
 })();
